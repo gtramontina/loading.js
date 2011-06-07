@@ -1,6 +1,6 @@
 # loading.js #
 As I'm aiming to move [Writeboard](http://github.com/gtramontina/Writeboard) to use javascript micro-frameworks instead of a complete huge lib, I've extracted this small one from it.
-The objective is to have a set javascript functions that help creating 'loading', 'modal', 'promt' dialogs.
+The objective is to have a set javascript functions that help creating 'loading', 'modal', 'prompt' dialogs.
 
 Usage
 -----
