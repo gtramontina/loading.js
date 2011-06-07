@@ -25,8 +25,8 @@
       change opacity for opacity in [5..100] by 5
       callback?()
 
-    fadeOut: (element) ->
-      change = (opacity, callback) ->
+    fadeOut: (element, callback) ->
+      change = (opacity) ->
         value = opacity
         setTimeout (-> setOpacity element, value), (100-value)*3
       change opacity for opacity in [100..0] by -5
@@ -45,7 +45,7 @@
 
   hide = ->
     showing = false
-    hideAnimation overlayDiv(), -> element.style.display = 'none'
+    hideAnimation overlayDiv(), -> overlayDiv().style.display = 'none'
 
 
   # Defaults
