@@ -32,10 +32,10 @@
       change opacity for opacity in [100..0] by -5
       callback?()
 
-  showAnimation = (animation) ->
+  setShowAnimation = (animation) ->
     showAnimation = animations[animation]
 
-  hideAnimation = (animation) ->
+  setHideAnimation = (animation) ->
     hideAnimation = animations[animation]
 
   showing = false
@@ -49,13 +49,13 @@
 
 
   # Defaults
-  showAnimation 'fadeIn'
-  hideAnimation 'fadeOut'
+  showAnimation = animations.fadeIn
+  hideAnimation = animations.fadeOut
 
   # API
   show          : show
   hide          : hide
-  showAnimation : showAnimation
-  hideAnimation : hideAnimation
+  setShowAnimation : setShowAnimation
+  setHideAnimation : setHideAnimation
 )()
 
